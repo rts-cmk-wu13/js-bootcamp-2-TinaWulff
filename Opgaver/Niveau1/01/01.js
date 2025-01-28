@@ -1,3 +1,5 @@
+document.addEventListener("DOMContentLoaded", function() {
+
 const button = document.querySelector("#my-button");
 
 let colorBlue = "#ADD8E6";
@@ -17,6 +19,7 @@ function ChangeButtonColor() {
     isColorBlue = !isColorBlue;
 };
 
+})
 
 
 // HERUNDER KOMMENTARER/NOTER TIL EGEN MEMORY
