@@ -1,0 +1,24 @@
+body {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+}
+
+.products {
+    display: grid;
+    justify-items: center;
+}
+
+.product__price__container {
+    margin-top: 2em;
+    font-weight: bold;
+
+}
+
+.product__descript__primary {
+    font-weight: bold;
+}
+
+.product__descript__ekstra {
+    text-align: center;
+}
