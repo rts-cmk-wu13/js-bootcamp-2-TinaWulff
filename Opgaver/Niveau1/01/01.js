@@ -6,20 +6,44 @@ let colorBlue = "#ADD8E6";
 let colorGrey = "#eee";
 
 
-let isColorBlue = false;
+let isSelected = false;
+
 
 button.addEventListener("click", ChangeButtonColor);
 
 function ChangeButtonColor() {
-    if (isColorBlue) {
+    if (isSelected) {
         button.style.backgroundColor = colorGrey;
     } else {
         button.style.backgroundColor = colorBlue;
     }
-    isColorBlue = !isColorBlue;
+    isSelected = !isSelected;
 };
 
 })
+
+
+//// SE VIDEO IGEN FOR AT FORSTÅ PG FÅ DE HER TIL AT VIRKE:
+/*
+button.addEventListener("click", function(){
+    isSelected = !isSelected;
+})
+
+});
+*/
+
+
+//// ANDEN VERSION (GENNEMGÅEDE VERSION) ////
+/*
+const button = document.querySelector("#my-button");
+
+button.addEventListener("click", function(){
+button.classList.toggle("click")
+})
+*/
+
+
+
 
 
 // HERUNDER KOMMENTARER/NOTER TIL EGEN MEMORY
