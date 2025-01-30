@@ -1,9 +1,9 @@
 
 function skjulElementViaCssSelector(cssSelector) {
-    // Find elementet med den givne CSS-selektor
+    // Find elementet med den givne CSS-selektor // I stedet for bestemt selector bruger vi parametret cssSelector
     const element = document.querySelector(cssSelector);
 
-    // Hvis elementet blev fundet, skjules det
+    // Hvis elementet blev fundet, skjules det (curly brackets ikke nødvendige ved kun en condition)
     if (element) {
         element.style.display = "none";
     }
@@ -26,3 +26,23 @@ elementer.style.display = "none";
 }
 
 */
+
+
+
+
+
+// Ekstraopgave - tjek video for fejl / overblik
+
+/* function skjulElementViaCssSelector(cssSelector) {
+    // Find elementet med den givne CSS-selektor // I stedet for bestemt selector bruger vi parametret cssSelector
+    const element = document.querySelector(cssSelector);
+
+    // Hvis elementet blev fundet, skjules det (curly brackets ikke nødvendige ved kun en condition)
+   skjulElement(element)
+    }
+
+function skjulElement (element) {
+    if (element !== null)
+        element.style.display = "none";
+}
+ */

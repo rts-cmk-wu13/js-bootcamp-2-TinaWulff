@@ -12,6 +12,7 @@ body {
 .product__price__container {
     margin-top: 2em;
     font-weight: bold;
+    font-size: 2em;
 
 }
 
@@ -22,3 +23,17 @@ body {
 .product__descript__ekstra {
     text-align: center;
 }
+
+.product__descript__price {
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+.product__price {
+    font-weight: bold;
+}
+
+.quantity-counter {
+    font-weight: bold;
+}
+
