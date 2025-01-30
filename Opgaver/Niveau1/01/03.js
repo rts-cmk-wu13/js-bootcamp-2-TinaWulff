@@ -16,8 +16,7 @@ skjulElementViaCssSelector (".headline3");
 
 
 // MIT START FORSØG; SOM JEG GODT VIDST IKKE VAR RIGTIGT MEN KUNNE IKKE TÆNKE MIG TIL LØSNINGEN,
-// Jeg vidste ikke og forstod ikke at man kunne bruge selve "cssSelector",
-// som parameter når man vælger elementer ved hjælp af document.querySelector.
+// Min hjerne forstod ikke først det med "cssSelector" som parameter.
 
 /*
 const elementer = document.querySelectorAll(".headline3", ".headline2", "#my-button");
