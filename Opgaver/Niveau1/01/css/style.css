@@ -48,6 +48,10 @@ label {
 	border-radius: 5px;
 }
 
+#my-button.click { 
+	background-color: #ADD8E6;
+}
+
 #my-button:focus {
 	outline: none;
 }

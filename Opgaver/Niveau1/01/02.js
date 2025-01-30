@@ -1,8 +1,26 @@
-
-function divide (a, b) {
+/*
+function beregnForhold (a, b) {
     return a / b;
 }
 
-let resultat = divide(4,3);
+let resultat = beregnForhold(4,3);
 
 console.log(resultat)
+*/
+
+
+// Ekstraopgave:
+
+function beregnForhold (a, b) {
+    if (b == 0){
+        return null
+    }
+
+    return a / b;
+   
+}
+
+let resultat = beregnForhold(4,3);
+
+console.log(resultat)
+
