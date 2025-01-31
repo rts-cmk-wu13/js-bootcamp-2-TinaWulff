@@ -12,10 +12,26 @@ function changeColor(event) {
 
 buttons.forEach(button => button.addEventListener("click", changeColor));       // Tilføj event listener til alle knapper
 
+/*
+//udgave gennemgået på klassen:
 
+const buttons = document.querySelectorAll("button");
 
+function handleClick(clickedElement){
+        buttons.forEach(function(button){
+            button.style.backgroundColor = "#eee";
+        })
+     clickedElement.style.backgroundColor = "#ADD8E6"
+    }
 
+    buttons.forEach(function(button) {
+        button.addEventListener("click", function(){
+             handleClick(button)
+        })
+})
 
+/// 
+*/
 
 /* FORKLARING TIL FUND AF RESULTAT:
 
