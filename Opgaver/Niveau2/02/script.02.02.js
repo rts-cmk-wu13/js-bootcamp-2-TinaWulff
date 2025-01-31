@@ -1,7 +1,7 @@
 
 
 document.addEventListener("DOMContentLoaded", function () {
-    const products = document.querySelectorAll(".products"); // Hent alle produkter
+    const products = document.querySelectorAll(".product"); // Hent alle produkter
     const totalPriceElement = document.querySelector(".product__price__total span"); // Totalpris element
 
     products.forEach(product => {
@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const addButton = product.querySelector(".add");               // Plus-knap
         const quantityNumber = product.querySelector(".quantity");     // Antal produkter
         const priceElement = product.querySelector(".product__price span"); // Priselement
-        const basePrice = parseFloat(priceElement.textContent);        // Hent startpris fra HTML //parseFloat bruges til at konvertere til flydende punkt tal, og bevarer decimaler.(se også parseInt længere nede)
+        const productPrice = parseFloat(priceElement.textContent);        // Hent startpris fra HTML //parseFloat bruges til at konvertere til flydende punkt tal, og bevarer decimaler.(se også parseInt længere nede)
 
         // Event listener for minus-knap
         substractButton.addEventListener("click", () => setAmount(-1));
@@ -20,10 +20,10 @@ document.addEventListener("DOMContentLoaded", function () {
         function setAmount(change) {
             let quantity = parseInt(quantityNumber.textContent) + change;   // parseInt() bruges til at konvertere en streng (string) til et heltal (integer)
 
-            if (quantity < 1) quantity = 1; // Undgå at gå under 1
+            if (quantity < 0) quantity = 0; // Undgå at gå under 1
 
             quantityNumber.textContent = quantity; // Opdater antal
-            priceElement.textContent = (basePrice * quantity).toFixed(2); // Opdater pris //toFixed(2) for at sikre, at priserne altid vises med to decimaler
+            priceElement.textContent = (productPrice * quantity).toFixed(2); // Opdater pris //toFixed(2) for at sikre, at priserne altid vises med to decimaler
 
             updateTotalPrice(); // 🔥 Opdater totalprisen
         }
@@ -40,3 +40,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
     updateTotalPrice(); // 🔥 Opdater totalpris ved load
 });
+
+/*
+////KLASSENS GENNEMGANG VERSION SE VIDEO
+
+MINDER OM MIN LØSNING 
+
+*/

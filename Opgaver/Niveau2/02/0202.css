@@ -4,7 +4,7 @@ body {
     justify-items: center;
 }
 
-.products {
+.product {
     display: grid;
     justify-items: center;
 }
